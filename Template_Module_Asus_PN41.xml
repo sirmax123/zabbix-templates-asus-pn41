@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2022-09-12T17:54:37Z</date>
+    <groups>
+        <group>
+            <name>Templates/Modules</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template Module Asus PN41</template>
+            <name>Template Module Asus PN41</name>
+            <groups>
+                <group>
+                    <name>Templates/Modules</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Asus PN41</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>asus.PN41.acpitz-acpi-0-temp-critical</name>
+                    <key>asus.PN41.acpitz-acpi-0-temp-critical</key>
+                    <value_type>FLOAT</value_type>
+                    <units>C</units>
+                    <applications>
+                        <application>
+                            <name>Asus PN41</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>asus.PN41.acpitz-acpi-0-temp-current</name>
+                    <key>asus.PN41.acpitz-acpi-0-temp-current</key>
+                    <value_type>FLOAT</value_type>
+                    <units>C</units>
+                    <applications>
+                        <application>
+                            <name>Asus PN41</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;90</expression>
+                            <name>acpitz-acpi-0-temp temperature is critical</name>
+                            <priority>HIGH</priority>
+                            <manual_close>YES</manual_close>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>asus.PN41.core-0-critical</name>
+                    <key>asus.PN41.core-0-critical</key>
+                    <value_type>FLOAT</value_type>
+                    <units>C</units>
+                    <applications>
+                        <application>
+                            <name>Asus PN41</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>asus.PN41.core-0-current</name>
+                    <key>asus.PN41.core-0-current</key>
+                    <value_type>FLOAT</value_type>
+                    <units>C</units>
+                    <applications>
+                        <application>
+                            <name>Asus PN41</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;90</expression>
+                            <name>core-0-current temperature is critical</name>
+                            <priority>HIGH</priority>
+                            <manual_close>YES</manual_close>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>asus.PN41.core-1-critical</name>
+                    <key>asus.PN41.core-1-critical</key>
+                    <value_type>FLOAT</value_type>
+                    <units>C</units>
+                    <applications>
+                        <application>
+                            <name>Asus PN41</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>asus.PN41.core-1-current</name>
+                    <key>asus.PN41.core-1-current</key>
+                    <value_type>FLOAT</value_type>
+                    <units>C</units>
+                    <applications>
+                        <application>
+                            <name>Asus PN41</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;90</expression>
+                            <name>core-1-current temperature is critical</name>
+                            <priority>HIGH</priority>
+                            <manual_close>YES</manual_close>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>asus.PN41.package-id-0-critical</name>
+                    <key>asus.PN41.package-id-0-critical</key>
+                    <value_type>FLOAT</value_type>
+                    <units>C</units>
+                    <applications>
+                        <application>
+                            <name>Asus PN41</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>asus.PN41.package-id-0-current</name>
+                    <key>asus.PN41.package-id-0-current</key>
+                    <value_type>FLOAT</value_type>
+                    <units>C</units>
+                    <applications>
+                        <application>
+                            <name>Asus PN41</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;90</expression>
+                            <name>package-id-0-current temperature is critical</name>
+                            <priority>HIGH</priority>
+                            <manual_close>YES</manual_close>
+                        </trigger>
+                    </triggers>
+                </item>
+            </items>
+            <screens>
+                <screen>
+                    <name>Sensors</name>
+                    <hsize>1</hsize>
+                    <vsize>1</vsize>
+                    <screen_items>
+                        <screen_item>
+                            <resourcetype>0</resourcetype>
+                            <style>0</style>
+                            <resource>
+                                <name>System Sensors</name>
+                                <host>Template Module Asus PN41</host>
+                            </resource>
+                            <width>1500</width>
+                            <height>200</height>
+                            <x>0</x>
+                            <y>0</y>
+                            <colspan>1</colspan>
+                            <rowspan>1</rowspan>
+                            <elements>0</elements>
+                            <valign>0</valign>
+                            <halign>0</halign>
+                            <dynamic>0</dynamic>
+                            <sort_triggers>0</sort_triggers>
+                            <url/>
+                            <application/>
+                            <max_columns>3</max_columns>
+                        </screen_item>
+                    </screen_items>
+                </screen>
+            </screens>
+        </template>
+    </templates>
+    <graphs>
+        <graph>
+            <name>System Sensors</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>1A7C11</color>
+                    <item>
+                        <host>Template Module Asus PN41</host>
+                        <key>asus.PN41.acpitz-acpi-0-temp-current</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Template Module Asus PN41</host>
+                        <key>asus.PN41.core-0-current</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Template Module Asus PN41</host>
+                        <key>asus.PN41.core-1-current</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>A54F10</color>
+                    <item>
+                        <host>Template Module Asus PN41</host>
+                        <key>asus.PN41.package-id-0-current</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
+</zabbix_export>
